@@ -35,7 +35,8 @@ public class CodeServiceImpl implements CodeService {
       //存入数据库
       codeDao.SendCode(phone, sendCode);
       //发送邮件
-      TestMail.sendMail(mailbox, "登录验证码", "你的验证码为：" + sendCode);
+      TestMail testMail = new TestMail();
+      testMail.sendMail(mailbox, "Java Mail 博世科技", "【博世科技】" + sendCode+"（登录验证码，请完成验证），如非本人操作，请忽略本短信。");
       log.info(sendCode);
       return true;
     }catch (Exception e){

@@ -108,7 +108,8 @@ public class SeleniumServiceImpl implements SeleniumService {
           .findElement(By.xpath("/html/body/div/div[3]/div/div/div/div[2]/ul/li[6]")).getText();
       //发送邮件
       String mailbox = "95108181@qq.com";
-      TestMail.sendMail(mailbox, "三代人科技您好", "这是你的邮箱号：" + youXiang.substring(3));
+      TestMail testMail = new TestMail();
+      testMail.sendMail(mailbox, "三代人科技您好", "这是你的邮箱号：" + youXiang.substring(3));
       log.info(youXiang.substring(3));
       //关闭浏览器
       driver.quit();
