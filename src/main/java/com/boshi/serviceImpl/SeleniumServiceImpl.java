@@ -19,10 +19,10 @@ public class SeleniumServiceImpl implements SeleniumService {
   //日志
   private final Logger log = LoggerFactory.getLogger(SeleniumServiceImpl.class);
 
-  public static void main(String[] args) throws InterruptedException {
-    SeleniumServiceImpl seleniumServiceImpl = new SeleniumServiceImpl();
-    seleniumServiceImpl.huLiAppShiZhong();
-  }
+//  public static void main(String[] args) throws InterruptedException {
+//    SeleniumServiceImpl seleniumServiceImpl = new SeleniumServiceImpl();
+//    seleniumServiceImpl.huLiAppShiZhong();
+//  }
 
 //  @Override
 //  public boolean huLiAppShiZhong() throws InterruptedException {

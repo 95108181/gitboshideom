@@ -7,27 +7,14 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component   //遗漏
+
+
 public class TestMail {
-  @Value("${mail.fromMail}")
-  private String fromMail;
-  @Value("${mail.user}")
-  private String user;
-  @Value("${mail.password}")
-  private String password;
-  @Value("${mail.host}")
-  private String host;
-  @Value("${mail.auth}")
-  private String auth;
-
-
   public void sendMail(String toMail, String mailTitle, String mailContent) throws Exception {
-//    String fromMail = "wq19950119@163.com"; // 用户名
-//    String user = "wq19950119"; // 用户
-//    String password = "wq19950119"; // 发件人邮箱客户端授权码
+    String fromMail = "wq19950119@163.com"; // 用户名
+    String user = "wq19950119"; // 用户
+    String password = "wq19950119"; // 发件人邮箱客户端授权码
     Properties props = new Properties(); //可以加载一个配置文件
     // 使用smtp：简单邮件传输协议
     props.put("mail.smtp.host", "smtp.163.com");//存储发送邮件服务器的信息
@@ -58,46 +45,6 @@ public class TestMail {
     sendMail("95108181@qq.com",
         "Java Mail 测试邮件2",
         "<a>html 元素</a>：<b>邮件内容</b>");
-  }
-
-  public String getFromMail() {
-    return fromMail;
-  }
-
-  public void setFromMail(String fromMail) {
-    this.fromMail = fromMail;
-  }
-
-  public String getUser() {
-    return user;
-  }
-
-  public void setUser(String user) {
-    this.user = user;
-  }
-
-  public String getPassword() {
-    return password;
-  }
-
-  public void setPassword(String password) {
-    this.password = password;
-  }
-
-  public String getHost() {
-    return host;
-  }
-
-  public void setHost(String host) {
-    this.host = host;
-  }
-
-  public String getAuth() {
-    return auth;
-  }
-
-  public void setAuth(String auth) {
-    this.auth = auth;
   }
 
 

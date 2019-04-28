@@ -32,7 +32,7 @@
   <header class="header header--fixed">
     <div class="container">
       <div class="header__inner">
-        <div class="header__logo"><a>博世科技</a></div>
+        <div class="header__logo"><a>测试系统</a></div>
         <div class="header__menu">
         </div>
       </div>
@@ -50,7 +50,7 @@
           <div class="row">
             <div
                 class="col-md-12 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 ">
-              <h1 class="hero__title">博世科技测试系统，为软件保驾护航!
+              <h1 class="hero__title">测试系统，为软件保驾护航!
               </h1>
               <p class="hero__text">Bosch Technology <a href="#">Test </a> System,<a href="#">
                 escort </a>the software! </p>
@@ -82,7 +82,7 @@
 
         </div>
         <p class="footer__copy">2018 &copy; Copyright <a href="#">Awe7</a>.- More Templates
-          <a>博世科技</a> - Collect from <a>博世科技</a></p>
+          <a>测试系统</a> - Collect from <a>测试系统</a></p>
       </div>
     </div>
   </div><!-- End / footer -->

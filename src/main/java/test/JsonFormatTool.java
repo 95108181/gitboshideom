@@ -1,4 +1,4 @@
-package com.boshi.util;
+package test;
 
 
 public class JsonFormatTool {
